@@ -1,0 +1,62 @@
+body { margin:20px auto; color:#333; font: 1em "Helvetia Neue", Helvetica, Arial, sans-serif; }
+
+a:hover { text-decoration: none; }
+
+#content {  padding: 20px; width: 600px; margin: 0 auto; overflow: hidden;}
+#footer { padding:20px; font-size:0.8em; }
+
+.hide { display:none; }
+.bounce { font-size: .9em; display: inline-block; margin: 0 0 10px; }
+
+h1 { font-size: 1.3em; }
+ol li { margin: 0 0 12px; line-height: 135%; }
+#aux { font-size: .9em; }
+
+.madlib { font-size: 1.3em; line-height: 160%; margin: 0; text-shadow: 1px 1px 1px #ccc; margin: 6px 0 0; }
+button { border: 3px solid #274F7F; font-weight: bold; font-size: 1em; color: #fff; padding: 4px 6px; cursor: pointer;
+		-moz-border-radius: 6px; 
+		-webkit-border-radius: 6px 6px 6px 6px;
+		background: #3B699F;
+		background: -moz-linear-gradient(top, #3B699F, #27517F); 
+		background: -webkit-gradient(linear, left top, left bottom, from(#3B699F), to(#27517F));
+}
+button:hover { background: #274F7F; }
+
+.description { line-height: 135%; font-size: 1.1em; }
+
+#check-form { border: 1px solid #ccc; border-top: 1px solid #eee; border-left: 1px solid #eee; padding: 20px 20px 0; 
+		-moz-box-shadow:  2px 2px 2px #ddd; 
+		-webkit-box-shadow:  2px 2px 2px #ddd; 
+		background: #f9f9f9;
+		background: -moz-linear-gradient(top, #fff, #eee); 
+		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); 
+}
+#check-form input { border:none; border-bottom: 1px dashed #888; text-align: center; font: .9em "Courier New", Courier, monospace; padding: 0 4px 2px; background: transparent; }
+#check-form input:focus { border-bottom: 1px solid #666; }
+#check-form label { font-size:0.8em; color:#888; }
+
+#introduction { overflow: hidden; width: 600px; margin: 0 0 20px; }
+#introduction p { float: left; width: 330px; padding: 10px 0 0 0; }
+#introduction img { float: right; }
+
+form { clear: both; }
+
+#results { background: #E9EFB3; padding: 10px 20px; margin: 0 0 20px; border: 1px solid #D8DF99; border-top: none; border-left: none; }
+#results li { margin: 0 0 10px; line-height: 125%; }
+
+#results h2 { display: inline-block; margin-right: 30px; }
+#results.failure h2 span { color: red; }
+#results.success h2 span { color: green; }
+#results .new { font-weight: bold; }
+
+#footer { clear: both;  font-size: .9em; color: #666; line-height: 3em; text-align: center;}
+#footer .credits a { background: url(../img/made-icons.png) no-repeat; display: inline-block; text-indent: -999em; background-position: 0 0; width: 42px;  height: 46px; margin: 0 2px; }
+
+#footer .credits a.lincoln:hover { background-position: 0 -53px; }
+
+#footer .credits a.flask { background-position: -50px 0; width: 48px;}
+#footer .credits a.flask:hover { background-position: -50px -53px;}
+#footer .credits a.appengine { background-position: -106px 0; width: 52px;}
+#footer .credits a.appengine:hover { background-position: -106px -53px; }
+#footer .credits a.github { background-position: -169px 0; }
+#footer .credits a.github:hover { background-position: -169px -53px; }

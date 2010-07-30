@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/placeholder.js"></script>
+</head>
+<body>
+	
+	<div id="content">
+	<div id="introduction">
+		{% block introduction %}
+		<img src="/static/img/logo.jpg" alt="" />
+		<p class="description">Expecting an email, but don't want to get distracted by the rest of the garbage in your inbox?
+		Search your <strong>Gmail</strong> inbox without ever opening it.</p>
+		{% endblock %}
+	</div>
+	{% block content %}{% endblock %}
+	
+	
+	<div id="footer">
+		<p class="credits">Made by <a href="http://lincolnloop.com/" class="lincoln" alt="Lincoln Loop" title="Lincoln Loop, world class Python ninjas">Lincoln Loop</a> using <a href="http://flask.pocoo.org/" class="flask" alt="Flask" title="Flask, a beautiful little Python framework">Flask</a> on <a href="http://code.google.com/appengine/" class="appengine" alt="App Engine" title="App Engine, sweet hosting Google style!">App Engine</a>. Keeping it organized with <a href="http://github.com/lincolnloop" class="github" alt="GitHub" title="Git is delicious!">GitHub</a></p>
+		<p id="aux"><a href="/information">Privacy and Other Information</a></p>
+	</div>
+	
+	</div>
+	
+	
+</body>
+{% block javascript %}{% endblock %}
+</html>

@@ -1,0 +1,16 @@
+application: emailed-me
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /static
+  static_dir: static
+
+- url: /(google.*\.html)
+  static_files: static/\1
+  upload: static/(.*\.html)
+
+- url: /.*
+  script: runner.py

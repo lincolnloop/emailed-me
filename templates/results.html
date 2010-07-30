@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}{% if feed %}YES!{% else %}NO!{% endif %}{% endblock %}
+{% block content %}
+	{% if feed %}
+		<div id="results" class="success">
+		<h2><span>YES!</span> You have received something.</h2>
+		<a href="#check-form" class="new">New search</a>
+		<ol>
+		{% for email in feed %}
+			<li>
+				<a href="{{ email.url }}" class="summary-toggle"><strong>{{ email.from }}</strong>: {{ email.subject }} on {{ email.date }}</a>
+				<p class="summary hide">{{ email.summary }} <a href="{{ email.url }}">more</a></p>
+				
+			</li>
+		{% endfor %}
+		</ol>
+	{% else %}
+		<div id="results" class="failure">
+		<h2><span>NOPE!</span> Sorry, we didn't find anything.</h2>
+		<a href="#check-form" class="new">New search</a>
+
+		<p>You haven't received anything new. Why not try another e-mail address?</p>
+	{% endif %}
+</div>
+	{% include "includes/form.html" %}
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript" charset="utf-8">
+		$('.summary-toggle').click(function(){
+			$(this).siblings('p').slideToggle();
+			return false;
+		});
+		$('a.new').click(function(){
+			$('#results').slideUp();
+			$('#search').val('');
+			return false;
+		});
+	</script>
+{% endblock %}

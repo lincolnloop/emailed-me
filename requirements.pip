@@ -1,0 +1,9 @@
+# requirements can be installed by running `pip install -r requirements.pip`
+# but they are all included in the lib directory for app engine compatibility
+feedparser
+Flask
+httplib2
+oauth2
+
+# for testing
+twill
