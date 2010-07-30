@@ -1,18 +1,10 @@
 body { margin:20px auto; color:#333; font: 1em "Helvetia Neue", Helvetica, Arial, sans-serif; }
 
-a:hover { text-decoration: none; }
-
-#content {  padding: 20px; width: 600px; margin: 0 auto; overflow: hidden;}
-#footer { padding:20px; font-size:0.8em; }
-
-.hide { display:none; }
-.bounce { font-size: .9em; display: inline-block; margin: 0 0 10px; }
-
 h1 { font-size: 1.3em; }
 ol li { margin: 0 0 12px; line-height: 135%; }
-#aux { font-size: .9em; }
 
-.madlib { font-size: 1.3em; line-height: 160%; margin: 0; text-shadow: 1px 1px 1px #ccc; margin: 6px 0 0; }
+a:hover { text-decoration: none; }
+
 button { border: 3px solid #274F7F; font-weight: bold; font-size: 1em; color: #fff; padding: 4px 6px; cursor: pointer;
 		-moz-border-radius: 6px; 
 		-webkit-border-radius: 6px 6px 6px 6px;
@@ -22,7 +14,20 @@ button { border: 3px solid #274F7F; font-weight: bold; font-size: 1em; color: #f
 }
 button:hover { background: #274F7F; }
 
+form { clear: both; }
+
+.hide { display:none; }
+.bounce { font-size: .9em; display: inline-block; margin: 0 0 10px; }
+
+#content {  padding: 20px; width: 600px; margin: 0 auto; overflow: hidden;}
+#footer { padding:20px; font-size:0.8em; }
+
+#aux { font-size: .9em; }
+
 .description { line-height: 135%; font-size: 1.1em; }
+
+/* Search Form Styles */
+.madlib { font-size: 1.3em; line-height: 160%; margin: 0; text-shadow: 1px 1px 1px #ccc; margin: 6px 0 0; }
 
 #check-form { border: 1px solid #ccc; border-top: 1px solid #eee; border-left: 1px solid #eee; padding: 20px 20px 0;
 		-moz-box-shadow:  2px 2px 2px #ddd; 
@@ -52,8 +57,6 @@ background: -webkit-gradient(linear, left top, left bottom, from(#EF8759), to(#C
 #introduction p { float: left; width: 330px; padding: 10px 0 0 0; }
 #introduction img { float: right; }
 
-form { clear: both; }
-
 #results { background: #E9EFB3; padding: 10px 20px; margin: 0 0 20px; border: 1px solid #D8DF99; border-top: none; border-left: none; }
 #results li { margin: 0 0 10px; line-height: 125%; }
 
@@ -62,6 +65,8 @@ form { clear: both; }
 #results.success h2 span { color: green; }
 #results .new { font-weight: bold; }
 
+
+/* Footer Styles */
 #footer { clear: both;  font-size: .9em; color: #666; line-height: 3em; text-align: center;}
 #footer .credits a { background: url(../img/made-icons.png) no-repeat; display: inline-block; text-indent: -999em; background-position: 0 0; width: 42px;  height: 46px; margin: 0 2px; }
 
