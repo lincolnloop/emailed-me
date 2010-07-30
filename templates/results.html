@@ -24,17 +24,3 @@
 </div>
 	{% include "includes/form.html" %}
 {% endblock %}
-
-{% block javascript %}
-	<script type="text/javascript" charset="utf-8">
-		$('.summary-toggle').click(function(){
-			$(this).siblings('p').slideToggle();
-			return false;
-		});
-		$('a.new').click(function(){
-			$('#results').slideUp();
-			$('#search').val('');
-			return false;
-		});
-	</script>
-{% endblock %}

@@ -24,16 +24,29 @@ button:hover { background: #274F7F; }
 
 .description { line-height: 135%; font-size: 1.1em; }
 
-#check-form { border: 1px solid #ccc; border-top: 1px solid #eee; border-left: 1px solid #eee; padding: 20px 20px 0; 
+#check-form { border: 1px solid #ccc; border-top: 1px solid #eee; border-left: 1px solid #eee; padding: 20px 20px 0;
 		-moz-box-shadow:  2px 2px 2px #ddd; 
 		-webkit-box-shadow:  2px 2px 2px #ddd; 
 		background: #f9f9f9;
 		background: -moz-linear-gradient(top, #fff, #eee); 
 		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); 
 }
-#check-form input { border:none; border-bottom: 1px dashed #888; text-align: center; font: .9em "Courier New", Courier, monospace; padding: 0 4px 2px; background: transparent; }
+#check-form input { padding: 4px 4px 2px; border: 3px solid transparent; border-bottom: 1px dashed #888; text-align: center; font: .9em "Courier New", Courier, monospace; background: transparent; width: 238px; }
+#check-form input.error { border: 3px solid #EF8759; background: #fff; }
 #check-form input:focus { border-bottom: 1px solid #666; }
+#check-form input.error:focus { border: 3px solid #EF8759; }
 #check-form label { font-size:0.8em; color:#888; }
+#check-form .error-msg { font-size: .8em; padding: 8px 4px 6px 10px; width: 227px; position: absolute; color: #fff; letter-spacing: 0.01em; display: none; top: 0; left: 0; z-index: 10; width: 238px; 
+
+background: #EF8759;
+background: -moz-linear-gradient(top, #EF8759,#CF6C40);
+background: -webkit-gradient(linear, left top, left bottom, from(#EF8759), to(#CF6C40));
+
+}
+.error-msg, input.error {
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+}
 
 #introduction { overflow: hidden; width: 600px; margin: 0 0 20px; }
 #introduction p { float: left; width: 330px; padding: 10px 0 0 0; }
