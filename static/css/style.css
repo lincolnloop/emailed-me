@@ -14,7 +14,7 @@ button { border: 3px solid #274F7F; font-weight: bold; font-size: 1em; color: #f
 }
 button:hover { background: #274F7F; }
 button::-moz-focus-inner { border: 0; }
-button:focus { outline: none; }
+button:focus, input:focus { outline: none; }
 
 form { clear: both; }
 
