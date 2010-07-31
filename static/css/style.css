@@ -1,4 +1,4 @@
-body { margin:20px auto; color:#333; font: 1em "Helvetia Neue", Helvetica, Arial, sans-serif; }
+body { margin:20px auto; color:#333; font: 1em "Helvetia Neue", Helvetica, Arial, sans-serif; background: url(../img/bg.png) repeat-x top left; }
 
 h1 { font-size: 1.3em; }
 ol li { margin: 0 0 12px; line-height: 135%; }
@@ -13,6 +13,8 @@ button { border: 3px solid #274F7F; font-weight: bold; font-size: 1em; color: #f
 		background: -webkit-gradient(linear, left top, left bottom, from(#3B699F), to(#27517F));
 }
 button:hover { background: #274F7F; }
+button::-moz-focus-inner { border: 0; }
+button:focus { outline: none; }
 
 form { clear: both; }
 
@@ -21,9 +23,9 @@ form { clear: both; }
 
 #content {  padding: 20px; width: 600px; margin: 0 auto; overflow: hidden;}
 #footer { padding:20px; font-size:0.8em; }
-
 #aux { font-size: .9em; }
 
+#logo { margin: 0 0 4px; }
 .description { line-height: 135%; font-size: 1.1em; }
 
 /* Search Form Styles */
@@ -41,7 +43,7 @@ form { clear: both; }
 #check-form input:focus { border-bottom: 1px solid #666; }
 #check-form input.error:focus { border: 3px solid #EF8759; }
 #check-form label { font-size:0.8em; color:#888; }
-#check-form .error-msg { font-size: .8em; padding: 8px 4px 6px 10px; width: 227px; position: absolute; color: #fff; letter-spacing: 0.01em; display: none; top: 0; left: 0; z-index: 10; width: 238px; 
+#check-form .error-msg { font-size: .8em; padding: 8px 4px 6px 6px; position: absolute; color: #fff; letter-spacing: 0.01em; display: none; top: 0; left: 0; z-index: 10; width: 242px; 
 
 background: #EF8759;
 background: -moz-linear-gradient(top, #EF8759,#CF6C40);
@@ -57,9 +59,9 @@ background: -webkit-gradient(linear, left top, left bottom, from(#EF8759), to(#C
 #introduction p { float: left; width: 330px; padding: 10px 0 0 0; }
 #introduction img { float: right; }
 
+/* Search Results */
 #results { background: #E9EFB3; padding: 10px 20px; margin: 0 0 20px; border: 1px solid #D8DF99; border-top: none; border-left: none; }
 #results li { margin: 0 0 10px; line-height: 125%; }
-
 #results h2 { display: inline-block; margin-right: 30px; }
 #results.failure h2 span { color: red; }
 #results.success h2 span { color: green; }

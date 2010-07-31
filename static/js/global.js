@@ -9,12 +9,14 @@ if (checkform.length == 1) {
                                 var pos = search.offset();
                                 
                                 search.addClass('error');
-                                search.parent().parent().append('<label for="search" class="error-msg">Please enter an e-mail address.</label>');
+                                search.parent().parent().append('<label for="search" class="error-msg">Please enter an e-mail address or name.</label>');
                                 
                                 checkform.find('.error-msg').css({
                                         'top': Math.round(pos.top + search.height() + 11),
                                         'left': Math.round(pos.left)
                                 }).slideDown('fast');
+                                
+                                search.focus();
                         }
                         return false;
                 } else {
