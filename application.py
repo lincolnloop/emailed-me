@@ -3,7 +3,7 @@ import datetime
 import time
 
 import feedparser
-from flask import redirect, url_for, request, render_template, session
+from flask import redirect, url_for, request, render_template, session, g
 from flask import Flask
 from oauth2 import parse_qsl
 
@@ -15,6 +15,11 @@ app = Flask(__name__)
 app.secret_key = secrets.SECRET_KEY
 
 FEED_URL = 'https://mail.google.com/mail/feed/atom'
+
+@app.before_request
+def before_request():
+    """Adds Analytics code to the global context for use in templates"""
+    g.analytics_code = secrets.ANALYTICS_CODE
 
 @app.route('/')
 def index():
